@@ -27,11 +27,11 @@ def cas_standardizer(file_from,cas_col):
                                 
                                 temp_cas=""
                                 
-                                for algarismo,letra in enumerate(rev_cas):
-                                        temp_cas+=letra
-                                        if algarismo==0:
+                                for i,l in enumerate(rev_cas):
+                                        temp_cas+=l
+                                        if i==0:
                                                 temp_cas=temp_cas+"-"
-                                        if algarismo==2:
+                                        if i==2:
                                                 temp_cas=temp_cas+"-"
                                 
                                 cas=temp_cas[::-1]
